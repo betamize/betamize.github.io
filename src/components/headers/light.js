@@ -96,7 +96,7 @@ export default ({
   const defaultLogoLink = (
     <LogoLink href="/">
       {/* <img src={logo} alt="logo" /> */}
-      Binary Geek
+      BetaMize
     </LogoLink>
   );
 
@@ -130,7 +130,7 @@ export default ({
           onClick={toggleNavbar}
           className={showNavLinks ? 'open' : 'closed'}
         >
-          {!showNavLinks && <MenuIcon tw="w-6 h-6" />}
+          {!showNavLinks && <MenuIcon tw="w-6 h-6" aria-label="Menu" />}
         </NavToggle>
       </MobileNavLinksContainer>
     </Header>

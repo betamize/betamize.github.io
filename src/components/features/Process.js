@@ -91,6 +91,7 @@ const Process = ({
             imageBorder={imageBorder}
             imageShadow={imageShadow}
             imageRounded={imageRounded}
+            alt="PROCESS"
           />
           {imageDecoratorBlob && <DecoratorBlob css={decoratorBlobCss} />}
         </ImageColumn>

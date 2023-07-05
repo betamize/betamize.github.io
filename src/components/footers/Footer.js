@@ -46,7 +46,7 @@ const Footer = () => {
           <CompanyColumn>
             <LogoContainer>
               {/* <LogoImg src={LogoImage} /> */}
-              <LogoText>Binary Geek</LogoText>
+              <LogoText>BetaMize</LogoText>
             </LogoContainer>
           </CompanyColumn>
           <Column>
@@ -68,8 +68,8 @@ const Footer = () => {
             <LinkList>
               <LinkListItem>(+91) 997 712 7384</LinkListItem>
               <LinkListItem>
-                <Link href="mailto:contact@binarygeek.co">
-                  contact@binarygeek.co
+                <Link href="mailto:contact@betamize.com">
+                  contact@betamize.com
                 </Link>
               </LinkListItem>
             </LinkList>
@@ -77,15 +77,27 @@ const Footer = () => {
         </FiveColumns>
         <Divider />
         <CopyrightAndCompanyInfoRow>
-          <CopyrightNotice>&copy; Copyright 2023, Binary Geek</CopyrightNotice>
+          <CopyrightNotice>&copy; Copyright 2023, BetaMize</CopyrightNotice>
           <SocialLinksContainer>
-            <SocialLink href="https://facebook.com">
+            <SocialLink
+              href="https://facebook.com"
+              aria-label="Facebook"
+              target="_blank"
+            >
               <FacebookIcon />
             </SocialLink>
-            <SocialLink href="https://twitter.com">
+            <SocialLink
+              href="https://twitter.com"
+              aria-label="Twitter"
+              target="_blank"
+            >
               <TwitterIcon />
             </SocialLink>
-            <SocialLink href="https://linkedin.com">
+            <SocialLink
+              href="https://linkedin.com"
+              aria-label="Linkedin"
+              target="_blank"
+            >
               <LinkedinIcon />
             </SocialLink>
           </SocialLinksContainer>
