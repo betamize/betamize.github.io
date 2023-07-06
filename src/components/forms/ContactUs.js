@@ -76,6 +76,7 @@ const ContactUs = ({
 
   useEffect(() => {
     setContactData({ ...contactData, email: preFillEmail });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [preFillEmail]);
 
   const handleChange = (e) => {
