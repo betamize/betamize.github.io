@@ -52,6 +52,9 @@ const Footer = () => {
           <Column>
             <LinkList>
               <LinkListItem>
+                <LinkSmooth href="#root">Home</LinkSmooth>
+              </LinkListItem>
+              <LinkListItem>
                 <LinkSmooth href="#about">About Us</LinkSmooth>
               </LinkListItem>
               <LinkListItem>
