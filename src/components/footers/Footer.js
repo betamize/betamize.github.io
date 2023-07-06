@@ -3,8 +3,8 @@ import tw from 'twin.macro';
 import styled, { css } from 'styled-components/macro'; //eslint-disable-line
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-import { ReactComponent as FacebookIcon } from 'images/facebook-icon.svg';
-import { ReactComponent as TwitterIcon } from 'images/twitter-icon.svg';
+// import { ReactComponent as FacebookIcon } from 'images/facebook-icon.svg';
+// import { ReactComponent as TwitterIcon } from 'images/twitter-icon.svg';
 import { ReactComponent as LinkedinIcon } from 'images/linkedin-icon.svg';
 
 const Container = tw.div`relative bg-gray-900 text-gray-100 -mx-8 -mb-8 px-8`;
@@ -79,7 +79,7 @@ const Footer = () => {
         <CopyrightAndCompanyInfoRow>
           <CopyrightNotice>&copy; Copyright 2023, BetaMize</CopyrightNotice>
           <SocialLinksContainer>
-            <SocialLink
+            {/* <SocialLink
               href="https://facebook.com"
               aria-label="Facebook"
               target="_blank"
@@ -92,9 +92,9 @@ const Footer = () => {
               target="_blank"
             >
               <TwitterIcon />
-            </SocialLink>
+            </SocialLink> */}
             <SocialLink
-              href="https://linkedin.com"
+              href="https://linkedin.com/company/betamize"
               aria-label="Linkedin"
               target="_blank"
             >
