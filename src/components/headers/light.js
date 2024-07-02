@@ -85,9 +85,9 @@ export default ({
     <NavLinks key={1}>
       <NavLinkSmooth href="#about">About Us</NavLinkSmooth>
       <NavLinkSmooth href="#process">Our Process</NavLinkSmooth>
-      <NavLinkSmooth href="http://blog.betamize.com" target="_blank">
+      <NavLink href="http://blog.betamize.com" target="_blank">
         Blog
-      </NavLinkSmooth>
+      </NavLink>
       <NavLinkSmooth href="#contact">Contact Us</NavLinkSmooth>
     </NavLinks>,
   ];

@@ -61,9 +61,9 @@ const Footer = () => {
                 <LinkSmooth href="#process">Our Process</LinkSmooth>
               </LinkListItem>
               <LinkListItem>
-                <LinkSmooth href="http://blog.betamize.com" target="_blank">
+                <Link href="http://blog.betamize.com" target="_blank">
                   Blog
-                </LinkSmooth>
+                </Link>
               </LinkListItem>
               <LinkListItem>
                 <LinkSmooth href="#contact">Contact Us</LinkSmooth>
