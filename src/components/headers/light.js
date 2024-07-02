@@ -1,14 +1,14 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import tw from 'twin.macro';
-import styled from 'styled-components/macro';
-import { css } from 'styled-components/macro'; //eslint-disable-line
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import React from "react";
+import { motion } from "framer-motion";
+import tw from "twin.macro";
+import styled from "styled-components/macro";
+import { css } from "styled-components/macro"; //eslint-disable-line
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
-import useAnimatedNavToggler from '../../helpers/useAnimatedNavToggler.js';
+import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 
-import { ReactComponent as MenuIcon } from 'feather-icons/dist/icons/menu.svg';
-import { ReactComponent as CloseIcon } from 'feather-icons/dist/icons/x.svg';
+import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
+import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 
 const Header = tw.header`
   flex justify-between items-center
@@ -66,7 +66,7 @@ export default ({
   logoLink,
   links,
   className,
-  collapseBreakpointClass = 'lg',
+  collapseBreakpointClass = "lg",
 }) => {
   /*
    * This header component accepts an optionals "links" prop that specifies the links to render in the navbar.
@@ -85,6 +85,9 @@ export default ({
     <NavLinks key={1}>
       <NavLinkSmooth href="#about">About Us</NavLinkSmooth>
       <NavLinkSmooth href="#process">Our Process</NavLinkSmooth>
+      <NavLinkSmooth href="http://blog.betamize.com" target="_blank">
+        Blog
+      </NavLinkSmooth>
       <NavLinkSmooth href="#contact">Contact Us</NavLinkSmooth>
     </NavLinks>,
   ];
@@ -104,7 +107,7 @@ export default ({
   links = links || defaultLinks;
 
   return (
-    <Header className={className || 'header-light'}>
+    <Header className={className || "header-light"}>
       <DesktopNavLinks css={collapseBreakpointCss.desktopNavLinks}>
         {logoLink}
         {links}
@@ -115,20 +118,20 @@ export default ({
       >
         {logoLink}
         <MobileNavLinks
-          initial={{ x: '150%', display: 'none' }}
+          initial={{ x: "150%", display: "none" }}
           animate={animation}
           css={collapseBreakpointCss.mobileNavLinks}
           onClick={toggleNavbar}
-          className={showNavLinks ? 'open' : 'closed'}
+          className={showNavLinks ? "open" : "closed"}
         >
           {showNavLinks && (
-            <CloseIcon tw="w-6 h-6 absolute" css={[{ right: '5%' }]} />
+            <CloseIcon tw="w-6 h-6 absolute" css={[{ right: "5%" }]} />
           )}
           {links}
         </MobileNavLinks>
         <NavToggle
           onClick={toggleNavbar}
-          className={showNavLinks ? 'open' : 'closed'}
+          className={showNavLinks ? "open" : "closed"}
         >
           {!showNavLinks && <MenuIcon tw="w-6 h-6" aria-label="Menu" />}
         </NavToggle>
